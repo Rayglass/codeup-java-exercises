@@ -37,7 +37,7 @@ public class ConsoleExercises {
 //        String firstWord = scanner.next();
 //        String secondWord = scanner.next();
 //        String thirdWord = scanner.next();
-//        System.out.printf("Your words are: %s, %n %s, %n %s, %n", firstWord, secondWord, thirdWord);
+//        System.out.printf("Your words are: %n %s, %n %s, %n %s, %n", firstWord, secondWord, thirdWord);
 
 
 
@@ -70,23 +70,23 @@ public class ConsoleExercises {
 
 //      TODO Display the area and perimeter of that classroom.
 //       The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
-
-        System.out.println("What is the length of your room?");
-        double length = scanner.nextDouble();
-        System.out.println("What is the width of your room?");
-        double width = scanner.nextDouble();
-        System.out.println("What is the height of your room?");
-        double height = scanner.nextDouble();
-
-        //Calculating the area of the room
-        double area = length*width;
-        System.out.printf("The area if the room is %.2f square feet %n", area);
-
-        double perimeter = (length*2) + (width*2);
-        System.out.printf("The perimeter of the room is %.2f feet %n", perimeter);
-
-        double volume = length * width * height;
-        System.out.printf("The volume of the room is %.2f feet %n", volume);
+//
+//        System.out.println("What is the length of your room?");
+//        double length = scanner.nextDouble();
+//        System.out.println("What is the width of your room?");
+//        double width = scanner.nextDouble();
+//        System.out.println("What is the height of your room?");
+//        double height = scanner.nextDouble();
+//
+//        //Calculating the area of the room
+//        double area = length*width;
+//        System.out.printf("The area if the room is %.2f square feet %n", area);
+//
+//        double perimeter = (length*2) + (width*2);
+//        System.out.printf("The perimeter of the room is %.2f feet %n", perimeter);
+//
+//        double volume = length * width * height;
+//        System.out.printf("The volume of the room is %.2f feet %n", volume);
 
 
 //      ***********Bonuses***********
@@ -96,7 +96,7 @@ public class ConsoleExercises {
 
 //         TODO The Scanner class can be told specifically what characters or pattern separates tokens in a piece of input with the useDelimiter method. Add the following line of code to your application after you have created a scanner (assuming the variable holding the Scanner is named scanner):
 
-        scanner.useDelimiter("\n");
+//        scanner.useDelimiter("\n");
 
 //          TODO How does this change the way your program operates?
 //           Rewrite your classroom program to use nextInt method. If you added the line of code above to your application, you should now have no trouble handling multiple pieces of user input.
