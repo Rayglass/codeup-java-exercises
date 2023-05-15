@@ -74,13 +74,13 @@ public class HelloWorld {
 //        System.out.println(y);
 //
 //
-//        int x = 10;
-//        int y = 2;
+        int x = 10;
+        int y = 2;
 //        x = x / y;
 //        y = y - x;
-
-//          x /= y;
-//          y -= x;
+          x /= y;
+          y -= x;
+        System.out.println(x);
 //        System.out.println(x);
 //        System.out.println(y);
 
@@ -92,6 +92,7 @@ public class HelloWorld {
         // error says required type is 'byte' but i have entered a 'int' value bc its bigger than the byte's range of (-128 to 127)
         // byte num = 150;
 
-
+//  sout tab = shortcut to print out
+        
     }
 }
