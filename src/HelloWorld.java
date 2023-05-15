@@ -1,6 +1,6 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+//        System.out.println("Hello, World!");
 
 //  Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
 //        int MyFavoriteNumber = 51;
@@ -44,7 +44,7 @@ public class HelloWorld {
 
 //  Try to create a variable named class. What happens?
 //        String class = "test";
-        // results in error - not a statement
+        // results in error - not a statement - class is a keyword
 
 // Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
 //        String theNumberThree = "three";
@@ -61,23 +61,37 @@ public class HelloWorld {
 //What are the two different types of errors we are observing?
 
 // Rewrite the following expressions using the relevant shorthand assignment operators:
-        int x = 4;
-        x = x + 5;
+//        int x = 4;
+////        x = x + 5;
+//            x += 5;
+//        System.out.println(x);
+////
+//
+//        int x = 3;
+//        int y = 4;
+////        y = y * x;
+//        y *= x;
+//        System.out.println(y);
+//
+//
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
 
-
-        int x = 3;
-        int y = 4;
-        y = y * x;
-
-
-        int x = 10;
-        int y = 2;
-        x = x / y;
-        y = y - x;
+//          x /= y;
+//          y -= x;
+//        System.out.println(x);
+//        System.out.println(y);
 
 // What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
 //
 //Hint: Integer.MAX_VALUE is a class .,lconstant (we'll learn more about these later) that holds the maximum value for the int type.
+
+        // max value for byte is   byte (-128 to 127)
+        // error says required type is 'byte' but i have entered a 'int' value bc its bigger than the byte's range of (-128 to 127)
+        // byte num = 150;
+
 
     }
 }
