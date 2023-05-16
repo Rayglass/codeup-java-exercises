@@ -67,10 +67,10 @@ public class ControlFlowExercises {
 //                }
 
 // 3. Table of Powers
-//        Scanner scanner = new Scanner(System.in);
+//        Scanner Scanner = new Scanner(System.in);
 //                System.out.print("What number would you like to go up to? ");
-//            int userNumber = scanner.nextInt();
-//                System.out.println("\nHere is your table!\n");
+//            int userNumber = Scanner.nextInt();
+//                System.out.println("\n Here is your table! \n");
 //                System.out.printf("%-8s | %-8s | %-8s %n", "number", "squared", "cubed");
 //                System.out.printf("%-8s | %-8s | %-8s %n", "--------", "--------", "--------");
 //            for(int i = 1; i <= userNumber; i++) {
@@ -78,7 +78,7 @@ public class ControlFlowExercises {
 //        }
 
 // 4. Convert given number grades into letter grades
-        Scanner scanner = new Scanner(System.in);
+        Scanner Scanner = new Scanner(System.in);
         String userAnswer;
 
         do {
@@ -86,7 +86,7 @@ public class ControlFlowExercises {
             String letterGrade;
             do {
                 System.out.println("\nEnter a grade between 1-100:");
-                userInput = scanner.nextInt();
+                userInput = Scanner.nextInt();
 
             } while ((userInput < 1) || (userInput > 100));
 
@@ -104,7 +104,7 @@ public class ControlFlowExercises {
 
             System.out.printf("Your grade of %d = %s", userInput, letterGrade);
             System.out.println("\n Do you wish to input another grade? \n Type yes and enter to continue. \n Type anything else and hit enter to cancel.");
-            userAnswer = scanner.next();
+            userAnswer = Scanner.next();
 
             } while (userAnswer.equals("yes"));
 
