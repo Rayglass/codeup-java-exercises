@@ -79,35 +79,57 @@ public class ControlFlowExercises {
 
 // 4. Convert given number grades into letter grades
         Scanner Scanner = new Scanner(System.in);
-        String userAnswer;
+//        String userAnswer;
+//
+//        do {
+//            int userInput = 0;
+//            String letterGrade;
+//            do {
+//                System.out.println("\nEnter a grade between 1-100:");
+//                userInput = Scanner.nextInt();
+//
+//            } while ((userInput < 1) || (userInput > 100));
+//
+//            if (userInput >= 88) {
+//                letterGrade = "A";
+//            } else if (userInput >= 80) {
+//                letterGrade = "B";
+//            } else if (userInput >= 67) {
+//                letterGrade = "C";
+//            } else if (userInput >= 60) {
+//                letterGrade = "D";
+//            } else {
+//                letterGrade = "F";
+//            }
+//
+//            System.out.printf("Your grade of %d = %s", userInput, letterGrade);
+//            System.out.println("\n Do you wish to input another grade? \n Type yes and enter to continue. \n Type anything else and hit enter to cancel.");
+//            userAnswer = Scanner.next();
+//
+//            } while (userAnswer.equals("yes"));
 
-        do {
-            int userInput = 0;
-            String letterGrade;
-            do {
-                System.out.println("\nEnter a grade between 1-100:");
-                userInput = Scanner.nextInt();
 
-            } while ((userInput < 1) || (userInput > 100));
+//        WORKING TO SHORTEN PREVIOUS CODE
 
-            if (userInput >= 88) {
-                letterGrade = "A";
-            } else if (userInput >= 80) {
-                letterGrade = "B";
-            } else if (userInput >= 67) {
-                letterGrade = "C";
-            } else if (userInput >= 60) {
-                letterGrade = "D";
-            } else {
-                letterGrade = "F";
-            }
-
-            System.out.printf("Your grade of %d = %s", userInput, letterGrade);
-            System.out.println("\n Do you wish to input another grade? \n Type yes and enter to continue. \n Type anything else and hit enter to cancel.");
-            userAnswer = Scanner.next();
-
-            } while (userAnswer.equals("yes"));
-
+//        System.out.println("Input a grade");
+//        int userGrade = Scanner.nextInt();
+////        System.out.println("Would you like to continue?");
+////        String userAnswer = Scanner.next();
+////        if(userAnswer.equals("yes")) {
+//        if (userGrade >= 88) {
+//            System.out.println("A");
+//        } else if (userGrade >= 80) {
+//            System.out.println("B");
+//        } else if (userGrade >= 67) {
+//            System.out.println("C");
+//        } else if (userGrade >= 60) {
+//            System.out.println("D");
+//        } else {
+//            System.out.println("F");
+//
+////        }else{
+////            System.out.println("Please confirm to see grade");
+        }
+    }
 
     }
-}
