@@ -3,10 +3,13 @@ public class Bob {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Hi, I am Bob...");
-        String answer;
+
+        boolean confirm = true;
 
         do {
+
             System.out.println("Interact with me!");
+
             String userInput = sc.nextLine();
 
             if(userInput.trim().endsWith("?")){
@@ -19,11 +22,11 @@ public class Bob {
                 System.out.println("Whatever.");
             }
 
-            System.out.println("Would you like to continue [y/n]");
-            answer = sc.next();
+            System.out.println("Would you like to continue? [y/n]");
+            confirm = sc.next().equalsIgnoreCase("y");
 
-            sc.nextLine();
 
-        } while(answer.equalsIgnoreCase("y"));
+        } while(confirm);
+        System.out.println("Thank You!");
     }
 }
