@@ -7,7 +7,8 @@ public class ControlFlowExercises {
         // a. While
 //        int i = 5;
 //        while (i <= 15) {
-//            System.out.println("i is " + i);
+//            System.out.print("i is " + i);
+        //    System.out.print(i + " "); -- either one works`
 //            i++;
 //        }
 
@@ -29,15 +30,14 @@ public class ControlFlowExercises {
 //        long i = 2;
 //        do {
 //            System.out.println(i);
-//            i = i * i;
-//        } while(i <= 1000000);
+//            i *= i;
+//        } while(i <= 1_000_000);
 //    }
 
         // c. For - Refactor
 //        for(int i = 0; i <=100; i += 2) {
 //            System.out.println(i + " ");
 //        }
-
 
 //        for(int i = 5; i <=15; i++) {
 //            System.out.println(i + " ");
@@ -47,11 +47,10 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 //
-//
 //        for(long i = 2; i <= 1000000; i *= i) {
 //            System.out.println(i);
 //        }
-
+// --------------------------------------------------------------------------
 // 2. Fizzbuzz
 
 //            for(int i = 1; i <= 100; i++) {
@@ -61,51 +60,68 @@ public class ControlFlowExercises {
 //                    System.out.println("Fizz");
 //                } else if(i % 5 == 0) {
 //                    System.out.println("Buzz");
-//                }
-//                else {
+//                } else {
 //                    System.out.println(i);
 //                }
 
+// --------------------------------------------------------------------------
+
 // 3. Table of Powers
-        Scanner Scanner = new Scanner(System.in);
-        System.out.println("What number would you like to go up to?");
-        int userNumber = Scanner.nextInt();
-        System.out.println("would you like to continue?");
-        String userAnswer = Scanner.next();
-        if (userAnswer.equals("yes")) {
-            System.out.println("number | squared | cubed");
-            for (int i = 1; i <= userNumber; i++) {
-                System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i));
-            }
-        } else {
-            System.out.println("That's Terrible");
-
-        }
-
-
-// 4. Convert given number grades into letter grades
 //        Scanner Scanner = new Scanner(System.in);
 //
-//        System.out.println("Input a grade");
-//        int userGrade = Scanner.nextInt();
-//        System.out.println("Type yes if you would like to continue");
-//        String userAnswer = Scanner.next();
-//        if (userAnswer.equals("yes")) {
-//            if (userGrade >= 88) {
-//                System.out.println("A");
-//            } else if (userGrade >= 80) {
-//                System.out.println("B");
+//        boolean confirm = true;
 //
-//            } else if (userGrade >= 67) {
-//                System.out.println("C");
-//            } else if (userGrade >= 60) {
-//                System.out.println("D");
-//            } else {
-//                System.out.println("F");
+//        do {
+//            System.out.println("What number would you like to go up to?");
+//            int userInp = Scanner.nextInt();
+//
+//            System.out.println("Here is your table!");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//
+//            for (int i = 1; i <= userInp; i++) {
+//                int square = i * i;
+//                int cubed = i * i * i;
+//
+//                System.out.printf("%-7s|%-9s|%-6s\n", i, square, cubed);
 //            }
-//        } else {
-//            System.out.println("Please confirm to see grade");
-//        }
+//            System.out.println("Would you like to continue? [y/n]");
+//            confirm = Scanner.next().equalsIgnoreCase("y");
+//        } while (confirm);
+//        System.out.println("Cool...");
+
+// --------------------------------------------------------------------------
+
+// 4. Convert given number grades into letter grades
+        Scanner Scanner = new Scanner(System.in);
+
+        boolean confirm = true;
+
+        do {
+
+            System.out.println("Enter your grade from 0 to 100.");
+
+            int userGrade = Scanner.nextInt();
+
+            if (userGrade >= 88) {
+                System.out.println("A");
+            } else if (userGrade >= 80) {
+                System.out.println("B");
+            } else if (userGrade >= 67) {
+                System.out.println("C");
+            } else if (userGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+
+            System.out.println("Continue? [y/n]");
+            confirm = Scanner.next().equalsIgnoreCase("y");
+
+        } while(confirm);
+        System.out.println("Thank You");
+
+
     }
 }
 
