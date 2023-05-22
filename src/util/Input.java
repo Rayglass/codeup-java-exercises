@@ -5,10 +5,6 @@ import java.util.Scanner;
 public class Input {
     private final Scanner scanner;
 
-    public static void main(String[] args) {
-
-    }
-
     public Input(Scanner scanner) {
         this.scanner = scanner;
     }
