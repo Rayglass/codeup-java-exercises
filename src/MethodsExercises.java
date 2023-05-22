@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-//        addition(4, 3);
+        addition(4, 3);
 //        subtraction(9, 2);
 //        multiplication(3, 3);
 //        division(12, 5);
@@ -10,7 +10,7 @@ public class MethodsExercises {
 //        count(5);
 //        getInteger(1, 3);
 //        factorial();
-        diceRoll();
+//        diceRoll();
 //        sayHi(3);
 
     }
