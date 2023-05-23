@@ -4,18 +4,18 @@ public class Person {
 
     public String getName(){
 //TODO: return the person's name
-    return name;
+    return this.name;
     }
 
     public void setName(String name){
 //TODO: change the name field to the passed value
-    this.name=name;
+    this.name = name;
     }
 
     public void sayHello(){
 //TODO: print a message to the console using the person's name
         System.out.printf("Hello, from %s. %n",name);
-
+//        System.out.printf("Hello, " + name +"!");
     }
 
 //TODO The class should have a constructor that accepts a `String` value and sets the person's name to the passed string.
@@ -26,14 +26,20 @@ public class Person {
     //TODO Create a `main` method on the class that creates a new `Person` object and tests the above methods.
     public static void main(String[] args) {
 
+//        Person billy = new Person("Billy");
+//        System.out.println(billy.getName());
+//        billy.setName("Bob");
+//        System.out.println(billy.getName());
+//        billy.sayHello();
+
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
 //        System.out.println(person1.getName().equals(person2.getName()));
 //        System.out.println(person1 == person2);
 
-        Person person1 = new Person("John");
-        Person person2 = person1;
-        System.out.println(person1 == person2);
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
 
 //            Person person1 = new Person("John");
 //            Person person2 = person1;

@@ -5,13 +5,10 @@ import java.util.Scanner;
 public class Input {
     private final Scanner scanner;
 
-    public Input(Scanner scanner) {
-        this.scanner = scanner;
+    public Input(){
+        this.scanner = new Scanner(System.in);
     }
 
-    public Input(){
-        scanner = new Scanner(System.in);
-    }
     public String getString(){
         System.out.println("Please input string: ");
         return scanner.nextLine();
@@ -21,6 +18,7 @@ public class Input {
         System.out.println(prompt);
         return scanner.nextLine();
     }
+
 
     public Boolean yesNo(){
         String userInput = getString("Please enter yes or no: ");
@@ -32,7 +30,6 @@ public class Input {
         }
     }
 
-    // catch
     public int getInt(int min, int max) {
         while (true) {
             System.out.println("Please enter a number between " + min + " and " + max);
@@ -49,12 +46,12 @@ public class Input {
             }
         }
     }
-    public int getInt(){
-        System.out.println("Please enter a number: ");
-        int userInput = scanner.nextInt();
-        return userInput;
-
-    }
+//    public int getInt(){
+//        System.out.println("Please enter a number: ");
+//        int userInput = scanner.nextInt();
+//        return userInput;
+//
+//    }
 
 
     public double getDouble(double min, double max) {
