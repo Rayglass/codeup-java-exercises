@@ -17,7 +17,7 @@ public class InputTest {
         System.out.println("You entered: " + yesNoInput);
 
         // test the getInt() method
-        int intInput = input.getInt( 1, 10);
+        int intInput = input.getInt( 1, 10, "Enter your choice");
         System.out.println("You entered: " + intInput);
 
         // test the getDouble() method

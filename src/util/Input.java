@@ -30,7 +30,7 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max) {
+    public int getInt(int min, int max, String enterYourChoice) {
         while (true) {
             System.out.println("Please enter a number between " + min + " and " + max);
             String userInput = getString();
