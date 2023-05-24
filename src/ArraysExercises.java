@@ -20,10 +20,17 @@ public class ArraysExercises {
         people[1] = new Person("Vince");
         people[2] = new Person("Ozzie");
 
+
+        for (Person person : people) {
+            System.out.println(person.getName());
+        }
+
+        System.out.println("---------------------");
+
+
 //        Add new person?
         Person tommy = new Person("Tommy");
         people = addPerson(people, tommy);
-
 
 
         for (Person person : people) {

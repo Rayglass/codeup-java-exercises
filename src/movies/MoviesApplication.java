@@ -14,6 +14,7 @@ public class MoviesApplication {
     static Input input = new Input();
 
     public static void userOptions() {
+        System.out.println("Welcome to my Movie Application\n");
         System.out.println("what would you like to do?\n");
         System.out.println("0 - exit");
         System.out.println("1 - view all movies");
@@ -122,4 +123,3 @@ public class MoviesApplication {
     }
 
 }
-
