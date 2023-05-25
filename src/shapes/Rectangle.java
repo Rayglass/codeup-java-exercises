@@ -2,11 +2,11 @@ package shapes;
 
 
 // 5.Change your existing Rectangle class to inherit from Quadrilateral and implement Measurable.
-public  class Rectangle extends Quadrilateral implements Measurable {
+public  class Rectangle extends Quadrilateral {
 
 
     // constructor
-    public Rectangle(double length, double width) {
+    protected Rectangle(double length, double width) {
         super(length, width);
     }
 

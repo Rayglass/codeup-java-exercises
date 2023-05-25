@@ -5,11 +5,13 @@ public class ShapesTest {
     public static void main(String[] args) {
 
 
-        // create a rectangle with length 5
-        Measurable rectangle = new Square(4);
 
-        // create a square with side length 5 and width 4
-        Measurable square = new Rectangle(5,4);
+        // create rectangle with side length 6 and width 4
+        Measurable rectangle = new Rectangle(6,4);
+
+
+        // create a square with length 5
+        Measurable square = new Square(5);
 
         // assign the rectangle to the myShape variable
         Measurable myShape = rectangle;
