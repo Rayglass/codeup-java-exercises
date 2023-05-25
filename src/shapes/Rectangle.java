@@ -1,27 +1,31 @@
 package shapes;
 
-public class Rectangle extends Quadrilateral implements Measurable  {
 
+// 5.Change your existing Rectangle class to inherit from Quadrilateral and implement Measurable.
+public  class Rectangle extends Quadrilateral implements Measurable {
+
+
+    // constructor
     public Rectangle(double length, double width) {
         super(length, width);
     }
 
-    @Override
+    @Override // implement Quadrilateral
     public void setLength(double length) {
         this.length = length;
     }
 
-    @Override
+    @Override // implement Quadrilateral
     public void setWidth(double width) {
         this.width = width;
     }
 
-    @Override
+    @Override // implement Measurable
     public double getPerimeter() {
         return 2 * (length + width);
     }
 
-    @Override
+    @Override // implement Measurable
     public double getArea() {
         return length * width;
     }
@@ -44,6 +48,6 @@ public class Rectangle extends Quadrilateral implements Measurable  {
 //        return (length * 2) + (width * 2);
 //    }
 //
-// }
 
 
+//}
