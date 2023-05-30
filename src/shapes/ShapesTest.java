@@ -4,11 +4,8 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-
-
         // create rectangle with side length 6 and width 4
         Measurable rectangle = new Rectangle(6,4);
-
 
         // create a square with length 5
         Measurable square = new Square(5);
