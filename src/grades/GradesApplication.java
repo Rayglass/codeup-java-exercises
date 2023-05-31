@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class GradesApplication {
 
+//    private static HashMap<String, Student> students;
 
     public static void main(String[] args) {
 

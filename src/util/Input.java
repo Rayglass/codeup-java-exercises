@@ -46,12 +46,6 @@ public class Input {
             }
         }
     }
-//    public int getInt(){
-//        System.out.println("Please enter a number: ");
-//        int userInput = scanner.nextInt();
-//        return userInput;
-//
-//    }
 
 
     public double getDouble(double min, double max) {
