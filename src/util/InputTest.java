@@ -24,5 +24,7 @@ public class InputTest {
         double doubleInput = input.getDouble( 1.0, 10.0);
         System.out.println("You entered: " + doubleInput);
 
+
+
     }
 }

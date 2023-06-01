@@ -104,4 +104,24 @@ public class Input {
             }
         }
     }
+
+
+    public static int getBinary(String binaryString) {
+        return Integer.valueOf(binaryString, 2);
+    }
+
+    public static int getHex(String hexString) {
+        return Integer.valueOf(hexString, 16);
+    }
+
+    public static void main(String[] args) {
+        String binary = "111"; // Binary representation of 7
+        String hex = "10"; // Hexadecimal representation of 16
+
+        int binaryNumber = getBinary(binary);
+        int hexNumber = getHex(hex);
+
+        System.out.println("Binary number: " + binaryNumber);
+        System.out.println("Hex number: " + hexNumber);
+    }
 }
